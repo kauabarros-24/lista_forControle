@@ -7,6 +7,17 @@
     */
 
     //ENTRADA
+    let array = [];
+    for (let i = 0; i < 5; i++) {
+        let numeroInformado = Number(prompt('Digite um número: '));
+        array.push(numeroInformado);
+        array.sort(function (a,b) {return a - b;});
+        if (i == 5) {
+            break;
+        }
+        console.log(array)
+    }
+    alert(`O maior número é ${array[4]}`);
 
 
     //PROCESSAMENTO

@@ -6,9 +6,21 @@
     */
 
     //ENTRADA
-
+    const numeroPrimo = Number(prompt('Digite um número'));
+    let indivisibilidae = 0;
     
     //PROCESSAMENTO
+    for (let i = 0; i < numeroPrimo; i++) {
+        if (numeroPrimo % i == 0 ) {
+            indivisibilidae++;
+        }
+    } 
+    if (indivisibilidae == 2) {
+        alert(`O número ${numeroPrimo} é primo`);
+    }
+    else {
+        alert('Não é primo');
+    }
 
     
     //SAÍDA

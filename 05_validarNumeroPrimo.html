@@ -5,10 +5,25 @@
     Faça um programa que peça para o usuário informar um número. Identifique se o número fornecido pelo usuário é um número primo e apresente na tela.
     */
 
-    //ENTRADA
-
+    const numeroPrimo = Number(prompt('Digite um número'));
+    let divisibilidade = 0;
 
     //PROCESSAMENTO
+    for (let i = 1; i <= numeroPrimo; i++) {
+        if (numeroPrimo % i == 0) {
+            divisibilidade++;
+        }
+    }
+    if (divisibilidade == 2) {
+        alert(`O número ${numeroPrimo} é primo`);
+    }
+    else {
+        alert('Não é primo');
+    }
+
+
+
+
 
 
     //SAÍDA

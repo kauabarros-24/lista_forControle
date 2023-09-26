@@ -8,9 +8,33 @@
     *Letras maiúsculas e minúsculas são a mesma letra e não podem ser repetidas!
     **Apresente apenas letras minúsculas!
     */
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let lista_real = [];
+    
+    
 
     //ENTRADA
+    for (let i = 0; i < listaDeLetras.length; i++) {
+        let letra = listaDeLetras[i].toLowerCase();
+        console.log(letra);
+        if (lista_real.includes(letra)) {
+            console.log('Não há nada');
+        }
+        else {
+            lista_real.push(letra);
+            console.log('Estou funcionando');
+        
+        }
+        console.log(lista_real);
+        
+    }
+    alert(lista_real);
 
+
+    
+
+   
+    
     
     //PROCESSAMENTO
 

@@ -7,9 +7,19 @@
     */
 
     //ENTRADA
+    const quantidadeNotas = Number(prompt("Digite a quantidade de notas"));
+    let media = 0;
     
-
-    //PROCESSAMENTO
+    for (let i = 0; i < quantidadeNotas; i++) {
+        let nota = Number(prompt('Digite a sua nota: '));
+        if (i == quantidadeNotas) {
+            break;
+        }   
+    media = nota / i;
+    
+    }
+    
+    document.write(`A sua média é ${media}`);
     
 
     //SAÍDA
