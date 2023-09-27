@@ -9,14 +9,27 @@
 
     //ENTRADA
     const quantidadeAlunos = Number(prompt('Digite a quantidade de alunos'));
-    let lista = [];
+    let voto1 = 0;
+    let voto2 = 0;
+    let voto3 = 0;
+    let candidato1 = prompt(`Insira o nome do Candidato 1:`)
+    let candidato2 = prompt(`Insira o nome do Candidato 2:`)
+    let candidato3 = prompt(`Insira o nome do Candidato 3:`)
 
     //PROCESSAMENTO
-    for (let i = 1; i<=quantidadeAlunos; i++) {
-        const voto = Number(prompt('Digite o número dos votos dos alunos: '));
-        lista.push(voto);
+    for (let i = 1; i <= quantidadeAlunos; i++) {
+        const voto = prompt(`Digite o número do voto dos alunos: \n1-${candidato1}\n2-${candidato2}\n3-${candidato3}`);
+        (voto == 1) ? voto1++ : (voto == 2) ? voto2 ++ : voto3++; 
     }
-    alert(lista);
+    let ganhador = (voto1 > voto2 && voto1 > voto3) ? candidato1 : (voto2 > voto1 && voto2 > voto3) ? candidato2 : candidato3;
+    alert(`O ganhador foi ${ganhador}.`);
+    alert(`${candidato1} obteve ${voto1} votos ${(voto1 / 100 * quantidadeAlunos).toFixed(2)} \n ${candidato2} obteve ${voto2} votos ${(voto2 / 100 * quantidadeAlunos )} \n${candidato3} obteve ${voto3} ${(voto3 / quantidadeAlunos * 100)}`);
+    
+
+    
+  
+    
+    
     
 
 
