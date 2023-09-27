@@ -8,9 +8,17 @@
     */
 
     //ENTRADA
-
+    const quantidadeAlunos = Number(prompt('Digite a quantidade de alunos'));
+    let lista = [];
 
     //PROCESSAMENTO
+    for (let i = 1; i<=quantidadeAlunos; i++) {
+        const voto = Number(prompt('Digite o número dos votos dos alunos: '));
+        lista.push(voto);
+    }
+    alert(lista);
+    
+
 
 
     //SAÍDA

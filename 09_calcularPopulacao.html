@@ -4,10 +4,20 @@
     PROBLEMA
     Considere que a população de uma cidade seja de 50000 habitantes, crescendo 1,5% ao ano. Apresente em tela a população prevista para um prazo de 5 anos e um prazo de 10 anos. Apresente os dados em tela.
     */
-
+    let populacao = 50000;
+    lista = [];
     //ENTRADA
-
-    
+    for(let i = 1; i <= 10; i++) {
+        populacao*= 1.5;
+        if (i == 5) {
+            lista.push(populacao);
+        }
+        if (i == 10) {
+            lista.push(populacao);
+        }
+        
+    }
+    alert(`Em 5 anos haverá ${Math.ceil(lista[0])} pessoas e em 10 anos haverá pessoas ${Math.ceil(lista[1])}`);
     //PROCESSAMENTO
     
 
